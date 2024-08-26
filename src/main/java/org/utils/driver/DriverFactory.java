@@ -8,7 +8,8 @@ import org.utils.LoggerSingleton;
 public class DriverFactory {
     protected static Logger logger = LoggerSingleton.getInstance().getLogger();
     public static JSONHandler jsonConfigHandler = new JSONHandler("src/main/java/org/utils/config.json");
-    private static final String browser = jsonConfigHandler.getValue("browser");
+//    private static final String browser = jsonConfigHandler.getValue("browser");
+    private static final String browser = System.getProperty("browser");
     private DriverFactory() {}
 
     public static WebDriver getDriver() {

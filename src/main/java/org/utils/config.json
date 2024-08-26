@@ -1,0 +1,10 @@
+{
+  "browser": "chrome",
+  "private": "incognito",
+  "download_directory": "/src/test/downloads/",
+  "language_chrome": "--accept-lang=en",
+  "language_firefox": "en-US,en",
+  "language_firefox_accept": "intl.accept_languages",
+  "start page": "",
+  "timeout": "40"
+}

@@ -25,6 +25,7 @@ public class DriverChrome implements Driver {
             ChromeOptions options = new ChromeOptions();
 
             options.addArguments(jsonConfigHandler.getValue("language_chrome"));
+            options.addArguments("--headless"); // Add this line to enable headless mode
 
             Map<String, Object> prefs = new HashMap<>();
             String downloadPath = Paths.get(System.getProperty("user.dir"),
@@ -36,6 +37,7 @@ public class DriverChrome implements Driver {
         }
         return driver.get();
     }
+
 
     public static void quit() {
         logger.info("quitting driver");

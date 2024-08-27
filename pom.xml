@@ -75,6 +75,7 @@
                 <configuration>
                     <systemProperties>
                         <browser>${browser}</browser>
+                        <startPage>${startPage}</startPage>
                     </systemProperties>
                 </configuration>
             </plugin>

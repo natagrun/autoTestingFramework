@@ -15,7 +15,7 @@ public class BaseTest {
     public void setup() {
         logger.info("setting driver up");
         DriverFactory.getDriver().manage().window().maximize();
-        DriverFactory.getDriver().get(jsonConfigHandler.getValue("start page"));
+        DriverFactory.getDriver().get(System.getProperty("startPage"));
     }
 
     @AfterTest
